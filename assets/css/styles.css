@@ -1,0 +1,126 @@
+:root {
+  --dark-green: #0B3D2E;
+  --green: #145A41;
+  --orange: #FF7A00;
+  --light: #F4F7F6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--light);
+  color: #222;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+  background: var(--dark-green);
+  padding: 20px 0;
+}
+
+.logo {
+  color: white;
+}
+
+.navbar nav {
+  float: right;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.btn {
+  background: var(--orange);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(11,61,46,0.9), rgba(11,61,46,0.9)),
+              url('../images/hero.jpg') center/cover;
+  color: white;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+
+.hero p {
+  margin: 20px 0;
+}
+
+/* STATS */
+.stats {
+  background: white;
+  padding: 60px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.stats h3 {
+  color: var(--orange);
+  font-size: 32px;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 80px 0;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* LANDSCAPE */
+.landscape {
+  background: var(--green);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+/* CTA */
+.cta {
+  background: var(--orange);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: var(--dark-green);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
